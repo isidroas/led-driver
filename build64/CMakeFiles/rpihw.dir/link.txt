@@ -1,0 +1,2 @@
+/usr/bin/ar qc librpihw.a  CMakeFiles/rpihw.dir/rpihw.c.o
+/usr/bin/ranlib librpihw.a

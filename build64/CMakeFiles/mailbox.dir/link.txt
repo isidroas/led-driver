@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmailbox.a  CMakeFiles/mailbox.dir/mailbox.c.o
+/usr/bin/ranlib libmailbox.a

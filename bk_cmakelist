@@ -1,0 +1,39 @@
+cmake_minimum_required (VERSION 2.8.11)
+project(ws2812-server)
+
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+
+#set(SRC1 dma.c dma.h mailbox.c mailbox.h pwm.c pwm.h ws2811.h pcm.c pcm.h rpihw.c rpihw.h)
+#set(SRC2 ws2811.c ws2811.h clk.h gpio.h)
+#set(SRC3 sk9822.c sk9822.h ws2811.h mailbox.h)
+#set(SRC4 main.c ws2811.h  effects/rotate.c effects/rainbow.c effects/fill.c effects/brightness.c effects/fade.c effects/blink.c effects/gradient.c effects/add_random.c effects/random_fade_in_out.c effects/chaser.c effects/color_change.c effects/fly_in.c effects/fly_out.c effects/read_png.c effects/read_jpg.c effects/progress.c)
+
+#add_executable(ws2812srv ${SRC1} ${SRC2} ${SRC3} ${SRC4})
+
+#target_link_libraries(ws2812srv ${CMAKE_THREAD_LIBS_INIT})
+
+add_library(dma STATIC dma.c )
+add_library(mailbox STATIC mailbox.c)
+add_library(pwm STATIC pwm.c)
+add_library(pcm STATIC pcm.c)
+add_library(rpihw STATIC rpihw.c )
+add_library(ws2811 STATIC ws2811.c)
+add_library(sk9822 STATIC sk9822.c )
+add_library(main STATIC main.c)
+
+add_executable(ws2812srv main.c)
+
+target_link_libraries(ws2812srv ${CMAKE_THREAD_LIBS_INIT} sk9822  main)
+target_link_libraries(ws2812srv  ws2811)
+target_link_libraries(ws2812srv  dma)
+target_link_libraries(ws2812srv  pcm)
+target_link_libraries(ws2812srv  pwm)
+target_link_libraries(ws2812srv  rpihw )
+target_link_libraries(ws2812srv  mailbox )
+
+
+
+#add_executable(ws2812srv main.c ws2811.h  effects/rotate.c effects/rainbow.c effects/fill.c effects/brightness.c effects/fade.c effects/blink.c effects/gradient.c effects/add_random.c effects/random_fade_in_out.c effects/chaser.c effects/color_change.c effects/fly_in.c effects/fly_out.c effects/read_png.c effects/read_jpg.c effects/progress.c)
+#
+#target_link_libraries(ws2812srv main dma mailbox pwm pcm ws2811 sk9822 rpihw)

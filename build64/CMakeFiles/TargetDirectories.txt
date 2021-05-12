@@ -1,0 +1,11 @@
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/edit_cache.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/main.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/ws2812srv.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/sk9822.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/ws2811.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/rpihw.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/pcm.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/pwm.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/rebuild_cache.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/mailbox.dir
+/home/isidro/embedded-linux/rpi-ws2812-server/build64/CMakeFiles/dma.dir

@@ -1,8 +1,10 @@
 all: ws2812svr
 
-INCL=-I/usr/include
-LINK=-L/usr/lib -L/usr/local/lib -I/usr/lib/arm-linux-gnueabihf -lpthread
-CC=gcc -g $(INCL)
+#INCL=-I/usr/include
+#LINK=-L/usr/lib -L/usr/local/lib -I/usr/lib/arm-linux-gnueabihf -lpthread
+#CC += -g $(INCL)
+LINK = -lpthread
+DEST_DIR ?= /usr/local/bin
 
 ifneq (1,$(NO_PNG))
   CC += -DUSE_PNG
@@ -55,12 +57,12 @@ clean:
 	rm *.o
 	
 install: ws2812svr
-	systemctl stop ws2812svr.service
-	cp ws2812svr.service  /etc/systemd/system/ws2812svr.service
-	cp -n ws2812svr.conf /etc/ws2812svr.conf
-	cp ws2812svr /usr/local/bin
-	systemctl daemon-reload
-	-systemctl stop ws2812svr.service
-	systemctl enable ws2812svr.service
-	systemctl start ws2812svr.service
+	#systemctl stop ws2812svr.service
+	#cp ws2812svr.service  /etc/systemd/system/ws2812svr.service
+	#cp -n ws2812svr.conf /etc/ws2812svr.conf
+	cp ws2812svr ${DEST_DIR}
+	#systemctl daemon-reload
+	#-systemctl stop ws2812svr.service
+	#systemctl enable ws2812svr.service
+	#systemctl start ws2812svr.service
 	

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpcm.a  CMakeFiles/pcm.dir/pcm.c.o
+/usr/bin/ranlib libpcm.a

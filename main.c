@@ -301,7 +301,7 @@ void write_to_output(char * text){
 			break;
 		case MODE_FILE:
 		case MODE_STDIN:
-			printf(text);
+			printf("%s",text);
 	}
 }
 

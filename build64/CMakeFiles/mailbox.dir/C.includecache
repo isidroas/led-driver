@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isidro/embedded-linux/rpi-ws2812-server/mailbox.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+assert.h
+-
+stdint.h
+-
+errno.h
+-
+unistd.h
+-
+sys/mman.h
+-
+sys/ioctl.h
+-
+sys/sysmacros.h
+-
+sys/stat.h
+-
+mailbox.h
+/home/isidro/embedded-linux/rpi-ws2812-server/mailbox.h
+
+/home/isidro/embedded-linux/rpi-ws2812-server/mailbox.h
+linux/ioctl.h
+-
+

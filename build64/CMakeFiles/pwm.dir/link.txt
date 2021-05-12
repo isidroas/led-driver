@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpwm.a  CMakeFiles/pwm.dir/pwm.c.o
+/usr/bin/ranlib libpwm.a

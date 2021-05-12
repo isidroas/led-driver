@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isidro/embedded-linux/rpi-ws2812-server/dma.h
+stdint.h
+-
+
+/home/isidro/embedded-linux/rpi-ws2812-server/pwm.c
+stdint.h
+-
+ws2811.h
+/home/isidro/embedded-linux/rpi-ws2812-server/ws2811.h
+pwm.h
+/home/isidro/embedded-linux/rpi-ws2812-server/pwm.h
+
+/home/isidro/embedded-linux/rpi-ws2812-server/pwm.h
+
+/home/isidro/embedded-linux/rpi-ws2812-server/rpihw.h
+stdint.h
+-
+
+/home/isidro/embedded-linux/rpi-ws2812-server/ws2811.h
+rpihw.h
+/home/isidro/embedded-linux/rpi-ws2812-server/rpihw.h
+pwm.h
+/home/isidro/embedded-linux/rpi-ws2812-server/pwm.h
+dma.h
+/home/isidro/embedded-linux/rpi-ws2812-server/dma.h
+

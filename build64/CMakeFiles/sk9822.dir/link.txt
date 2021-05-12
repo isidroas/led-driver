@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsk9822.a  CMakeFiles/sk9822.dir/sk9822.c.o
+/usr/bin/ranlib libsk9822.a

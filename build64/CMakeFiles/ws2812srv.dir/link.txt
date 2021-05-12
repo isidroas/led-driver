@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/ws2812srv.dir/main.c.o CMakeFiles/ws2812srv.dir/ws2811.c.o CMakeFiles/ws2812srv.dir/sk9822.c.o  -o ws2812srv  -pthread libmain.a libdma.a libmailbox.a libpwm.a libpcm.a librpihw.a libws2811.a libsk9822.a libmain.a 

@@ -37,6 +37,7 @@ extern "C" {
 
 #include "rpihw.h"
 #include "pwm.h"
+#include "dma.h"
 
 
 #define WS2811_TARGET_FREQ                       800000   // Can go as low as 400000

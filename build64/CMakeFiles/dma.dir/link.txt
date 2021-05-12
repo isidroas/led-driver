@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdma.a  CMakeFiles/dma.dir/dma.c.o
+/usr/bin/ranlib libdma.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libws2811.a  CMakeFiles/ws2811.dir/ws2811.c.o
+/usr/bin/ranlib libws2811.a

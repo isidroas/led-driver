@@ -1,0 +1,2 @@
+/home/isidro/poky_sdk2/tmp/sysroots/x86_64/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ar qc libsk9822.a  CMakeFiles/sk9822.dir/sk9822.c.o
+/home/isidro/poky_sdk2/tmp/sysroots/x86_64/usr/bin/aarch64-poky-linux/aarch64-poky-linux-ranlib libsk9822.a
